@@ -44,7 +44,7 @@ class Television:
 
     def channel_down(self):
         """
-
+        This function lowers the channel value.
         :return:
         """
         if self.__status:
@@ -72,3 +72,5 @@ class Television:
     def __str__(self):
         status = "On" if self.__status else "Off"
         return f"Power = [{status}], Channel = [{self.__channel}], Volume = [{self.__volume}]"
+
+
